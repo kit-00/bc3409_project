@@ -149,6 +149,7 @@ input {
     color:white;
     background-color: #E9967A;
     font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
