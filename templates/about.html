@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<head>
+</head>
+
+<body>
+    <div class="header shadow">
+        <a class="header-tab selected" href="/about">About</a>
+        <a class="header-tab" href="/recommendations">Recommendations</a>
+        <a class="header-tab" href="/">Model</a>
+    </div>
+    <div class="recommendations-wrapper">
+        <div class="recommendations">
+            <h2>About</h2>
+            <div class="para">This app is created for Professor Teoh Teik Toe as part of our final project for BC3409: AI in Accounting and Finance in AY21/22 Semester 2.</div>
+
+            <h2>About the model</h2>
+            <div class="para">As a high employee turnover rate will reduce the profits and valuations of companies, it is imperative for companies to manage their staff turnover well. In order to aid companies in retaining their talents, we created a predictive model that allows companies to predict if an employee is likely to resign. 
+                <br>
+                <br> Based on the model’s results, the company’s management can thereby prescribe measures to retain the employee. Some potential measures can be found under "Recommendations". </div>
+            
+
+            <h2>Limitations</h2>
+            <div class="para">While we have identified “Age”, “MonthlyIncome”, “DistanceFromHome” and “YearsAtCompany” to be significant variables in determining employee attrition, some employees may have extraordinary reasons for choosing to leave a firm. As such, our model may not be representative of the entire workforce. 
+                <br>
+                <br> Moreover, since the dataset used to train our predictive model originated from a MNC, our model may not be applicable to SMEs or companies in vastly different industries. This is due to the fact that the corporate culture may be significantly different in different companies, which can directly affect employee attrition. As such, our model may not be representative of the employee attrition situation in all companies across all industries. 
+                <br>
+                <br> These inherent limitations of our model will likely result in situations where an “incorrect” prediction was made in determining if the employee is likely to resign.</div>
+        </div>
+    </div>
+</body>
+
+<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+<!-- <link rel="stylesheet" href="../static/style.css"> -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">

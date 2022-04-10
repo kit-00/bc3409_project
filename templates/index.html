@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+<style>
+    .text {
+        font-family: "Times New Roman", Times, serif;
+        }
+</style>
+</head>
+<body>
+    <div class="header shadow">
+        <a class="header-tab" href="/about">About</a>
+        <a class="header-tab" href="/recommendations">Recommendations</a>
+        <a class="header-tab selected" href="/">Model</a>
+    </div>
+    <h1 class="text">Employee Attrition</h1>
+    <h2 class="text">This app will help to predict employee attrition.</h2>
+
+    <div class="body">
+        <form class="form" action="/" method="POST">
+            <div class="input-container">
+                <label for="age" class="placeholder spacing"><b>Age</b></label>
+                <input id="age" name="age" class="input spacing" type="number" placeholder=" " />
+                <div class="cut"></div>
+            </div>
+            <div class="input-container">
+                <label for="monthlyincome" class="placeholder spacing"><b>Monthly Income</b></label>
+                <input id="monthlyincome" name="monthlyincome" class="input spacing" type="number" placeholder=" " />
+                <div class="cut"></div>
+            </div>
+            <div class="input-container">
+                <label for="distance" class="placeholder spacing"><b>Distance From Home</b><i> (in km)</i></label>
+                <input id="distance" name="distance" class="input spacing" type="number" placeholder=" " />
+                <div class="cut"></div>
+            </div>
+            <div class="input-container">
+                <label for="years" class="placeholder spacing"><b>Years In Company</b></label>
+                <input id="years" name="years" class="input spacing" type="number" placeholder=" " />
+                <div class="cut"></div>
+            </div>
+            <div class="button-container">
+                <input class="buttons" type="submit" value="Submit">
+                <input class="buttons" type="reset" value="Reset">
+            </div>
+        </form>
+        <h3 class="text">{{result}}</h2>
+    </div>
+</body>
+<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}"> 
+<link rel="stylesheet" href="../static/style.css">
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
