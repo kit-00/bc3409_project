@@ -39,6 +39,7 @@ a.selected {
 }
 
 body {
+    display: none;
     background-color: oldlace;
 }
 
