@@ -78,6 +78,7 @@ h2 {
 }
 
 .input-container {
+    content-visibility: auto;
     width: 100%;
     display: flex;
     flex-direction: row;
