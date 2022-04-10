@@ -1,3 +1,3 @@
 $(window).load(function(){
-    $("body").show();
+    $(".body").show();
 });
