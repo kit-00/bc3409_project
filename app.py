@@ -48,7 +48,7 @@ def index():
             return invalidParameters("Please try again!")
 
         if not validateAge(Age):
-            return invalidParameters("Age of employee must be less than " + str(MAX_EMPLOYEE_AGE) + ". Please try again!")
+            return invalidParameters("Age of employee must be in the range of 18-70. Please try again!")
 
         if not validateYears(YearsAtCompany):
             return invalidParameters("Years in company must be less than " + str(MAX_YEARS_AT_COMPANY) + ". Please try again!")
