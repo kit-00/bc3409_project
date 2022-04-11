@@ -20,10 +20,10 @@ from flask import request, render_template
 import pickle
 
 MAX_EMPLOYEE_AGE: int = 70
-MAX_YEARS_AT_COMPANY: int = 60
+MAX_YEARS_AT_COMPANY: int = 70-18
 
 def validateAge(age):
-    return age <= MAX_EMPLOYEE_AGE and age >= 16
+    return age <= MAX_EMPLOYEE_AGE and age >= 18
 
 def validateNumber(num):
     return num > 0
@@ -51,7 +51,7 @@ def index():
             return invalidParameters("Age of employee must be less than " + str(MAX_EMPLOYEE_AGE) + ". Please try again!")
 
         if not validateYears(YearsAtCompany):
-            return invalidParameters("Years at company must be less than " + str(MAX_YEARS_AT_COMPANY) + ". Please try again!")
+            return invalidParameters("Years in company must be less than " + str(MAX_YEARS_AT_COMPANY) + ". Please try again!")
 
         print(Age, MonthlyIncome, DistanceFromHome, YearsAtCompany)
         pred = model.predict([[Age, MonthlyIncome, DistanceFromHome, YearsAtCompany]])
