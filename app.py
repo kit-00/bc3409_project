@@ -45,7 +45,7 @@ def index():
         YearsAtCompany = float(request.form.get("years") or 0)
 
         if not (validateNumber(Age) and validateNumber(MonthlyIncome) and validateNumber(DistanceFromHome) and validateNumber(YearsAtCompany)):
-            return invalidParameters("No Negative Numbers allowed. Please try again!")
+            return invalidParameters("Please try again!")
 
         if not validateAge(Age):
             return invalidParameters("Age of employee must be less than " + str(MAX_EMPLOYEE_AGE) + ". Please try again!")
